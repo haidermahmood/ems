@@ -4,7 +4,9 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { styled } from "@mui/material/styles";
 
-export const DeviceCard = styled(Card)`
+export const DeviceCard = styled(({ isSelected, ...props }) => (
+  <Card {...props} />
+))`
   width: 240px;
   cursor: pointer;
   background: ${(props) => (props?.isSelected ? "lightskyblue" : "white")};

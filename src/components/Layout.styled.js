@@ -2,7 +2,9 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 
-export const Container = styled(Box)`
+export const Container = styled(Box)``;
+
+export const Content = styled(Box)`
   display: flex;
   flex-direction: column;
   row-gap: 16px;

@@ -29,8 +29,6 @@ export default function DevicesManager() {
       datetimeFormated,
     };
 
-    console.log("actionItem:", actionItem);
-
     const newActionItems = [...actionItems, actionItem];
 
     setActionItems(newActionItems);

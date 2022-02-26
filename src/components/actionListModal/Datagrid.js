@@ -29,9 +29,8 @@ export default function DataGridDevices() {
       <DataGrid
         rows={actionItems}
         columns={columns}
-        getRowHeight={({ id, densityFactor, model: { deviceNames } }) => {
-          console.log(deviceNames.length);
-          return (deviceNames.length / 40) * 52;
+        getRowHeight={({ model: { deviceNames } }) => {
+          return Math.ceil(deviceNames.length / 40) * 52;
         }}
         pageSize={5}
         rowsPerPageOptions={[5]}
